@@ -1,7 +1,20 @@
 <script setup lang="ts"></script>
 
 <template>
-  <h1 class="bg-red-500">You did it!</h1>
+  <div class="min-h-screen">
+    <h1
+      v-gsap="{ preset: 'slide-up' }"
+      class="font-dmSans-bold text-h1-desktop bg-washedPurple-700 text-center"
+    >
+      You did it!
+    </h1>
+
+    <h1 class="font-dmSans-medium text-h1-desktop bg-washedPurple-500 text-center">You did it!</h1>
+
+    <h1 class="font-dmSans-regular text-h1-desktop bg-washedPurple-500 text-center">You did it!</h1>
+  </div>
 </template>
 
-<style scoped></style>
+<style scoped>
+/* No @theme here; it's in style.css */
+</style>

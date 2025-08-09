@@ -1,99 +1,103 @@
 @import "tailwindcss";
 
+/* Regular Font */
+@font-face {
+  font-family: "DM Sans";
+  font-display: swap;
+  src: url("./fonts/DMSans-Regular.ttf");
+}
+
+/* Medium Font */
+@font-face {
+  font-family: "DM Sans Medium";
+  font-display: swap;
+  src: url("./fonts/DMSans-Medium.ttf");
+}
+
+/* Bold Font */
+@font-face {
+  font-family: "DM Sans Bold";
+  font-display: swap;
+  src: url("./fonts/DMSans-Bold.ttf");
+}
+
 @theme {
-  --colors: {
-    "washed-purple": {
-      50: #F8F7FF,
-      100: #E8E7FF,
-      200: #DDDCFF,
-      300: #CDCBFF,
-      400: #C4C1FF,
-      500: #B5B2FF,
-      600: #A5A2E8,
-      700: #4A1ACF,
-      800: #64628C,
-      900: #4C4B6B,
-    },
-    "washed-blue": {
-      50: #F0F3FF,
-      100: #D0DAFF,
-      200: #BAC9FF,
-      300: #9AB0FF,
-      400: #86A1FF,
-      500: #6889FF,
-      600: #5F7DE8,
-      700: #4A61B5,
-      800: #394B8C,
-      900: #2C3A6B,
-    },
-    "primary-blue": {
-      50: #e6f0ff,
-      100: #b1d1ff,
-      200: #8cbaff,
-      300: #A5C5FD,
-      400: #3687FF,
-      500: #0D6EFD,
-      600: #0460E8,
-      700: #034BB5,
-      800: #02318C,
-      900: #022c6b,
-    },
-    "primary-purple": {
-      50: #f1e6ff,
-      100: #d3bDff,
-      200: #bd8aff,
-      300: #9f54ff,
-      400: #8d33ff,
-      500: #7000ff,
-      600: #6600e8,
-      700: #5000b5,
-      800: #3e008c,
-      900: #2f006D,
-    },
-    neutral: {
-      1: #FFFFFF,
-      2: #fcfcfd,
-      3: #f5f5f6,
-      4: #f0f0f1,
-      5: #d9d9dc,
-      6: #c0bfc4,
-      7: #8e8c95,
-      8: #8F8F8F,
-      9: #474553,
-      10: #292637,
-      11: #211f30,
-      12: #171427,
-      13: #030014,
-    },
-  };
+  --color-mint-500: oklch(0.72 0.11 178);
+  /* Washed Purple */
+  --color-washedPurple-50: #f8f7ff;
+  --color-washedPurple-100: #e8e7ff;
+  --color-washedPurple-200: #dddcff;
+  --color-washedPurple-300: #cdcbff;
+  --color-washedPurple-400: #c4c1ff;
+  --color-washedPurple-500: #b5b2ff;
+  --color-washedPurple-600: #a5a2e8;
+  --color-washedPurple-700: #817eb5;
+  --color-washedPurple-800: #64628c;
+  --color-washedPurple-900: #4c4b6b;
 
-  --font-family: {
-    "dm-sans": "DM Sans, sans-serif",
-  };
+  /* Washed Blue */
+  --color-washedBlue-50: #f0f3ff;
+  --color-washedBlue-100: #d0daff;
+  --color-washedBlue-200: #bac9ff;
+  --color-washedBlue-300: #9ab0ff;
+  --color-washedBlue-400: #86a1ff;
+  --color-washedBlue-500: #6889ff;
+  --color-washedBlue-600: #5f7de8;
+  --color-washedBlue-700: #4a61b5;
+  --color-washedBlue-800: #394b8c;
+  --color-washedBlue-900: #2c3a6b;
 
-  /* Font sizes */
-  --font-size: {
-    /* Mobile font sizes */
-    "header-1-mobile": 45px,
-    "header-2-mobile": 35px,
-    "header-3-mobile": 25px,
-    "header-4-mobile": 18px,
-    "header-5-mobile": 16px,
-    "paragraph-mobile": 16px,
+  --color-primaryBlue-50: #e6f0ff;
+  --color-primaryBlue-100: #b1d1ff;
+  --color-primaryBlue-200: #8cbaff;
+  --color-primaryBlue-300: #a5c5fd;
+  --color-primaryBlue-400: #3687ff;
+  --color-primaryBlue-500: #0d6efd;
+  --color-primaryBlue-600: #0460e8;
+  --color-primaryBlue-700: #034bb5;
+  --color-primaryBlue-800: #02318c;
+  --color-primaryBlue-900: #022c6b;
 
-    /* Desktop font sizes */
-    "header-1-desktop": 65px,
-    "header-2-desktop": 55px,
-    "header-3-desktop": 45px,
-    "header-4-desktop": 35px,
-    "header-5-desktop": 26px,
-    "paragraph-desktop": 16px,
-  };
+  --color-primaryPurple-50: #f1e6ff;
+  --color-primaryPurple-100: #d3bdff;
+  --color-primaryPurple-200: #bd8aff;
+  --color-primaryPurple-300: #9f54ff;
+  --color-primaryPurple-400: #8d33ff;
+  --color-primaryPurple-500: #7000ff;
+  --color-primaryPurple-600: #6600e8;
+  --color-primaryPurple-700: #5000b5;
+  --color-primaryPurple-800: #3e008c;
+  --color-primaryPurple-900: #2f006d;
 
-  /* Font weights */
-  --font-weight: {
-    bold: 700,
-    medium: 500,
-    regular: 400,
-  };
+  --color-neutral-1: #ffffff;
+  --color-neutral-2: #fcfcfd;
+  --color-neutral-3: #f5f5f6;
+  --color-neutral-4: #f0f0f1;
+  --color-neutral-5: #d9d9dc;
+  --color-neutral-6: #c0bfc4;
+  --color-neutral-7: #8e8c95;
+  --color-neutral-8: #8f8f8f;
+  --color-neutral-9: #474553;
+  --color-neutral-10: #292637;
+  --color-neutral-11: #211f30;
+  --color-neutral-12: #171427;
+  --color-neutral-13: #030014;
+
+  --font-dmSans-regular: "DM Sans", sans-serif;
+  --font-dmSans-medium: "DM Sans Medium", sans-serif;
+  --font-dmSans-bold: "DM Sans Bold", sans-serif;
+
+  /* Text Sizes */
+  --text-h1-mobile: 45px;
+  --text-h2-mobile: 35px;
+  --text-h3-mobile: 25px;
+  --text-h4-mobile: 18px;
+  --text-h5-mobile: 16px;
+  --text-paragraph-mobile: 16px;
+  --text-h1-desktop: 65px;
+  --text-h2-desktop: 55px;
+  --text-h3-desktop: 45px;
+  --text-h4-desktop: 35px;
+  --text-h5-desktop: 26px;
+  --text-paragraph-desktop: 16px;
 }
