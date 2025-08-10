@@ -1,20 +1,22 @@
-<script setup lang="ts"></script>
+<script lang="ts" setup>
+import AppNavbar from "@/sections/AppNavbar.vue";
+</script>
 
 <template>
-  <div class="min-h-screen">
-    <h1
-      v-gsap="{ preset: 'slide-up' }"
-      class="font-dmSans-bold text-h1-desktop bg-washedPurple-700 text-center"
-    >
-      You did it!
-    </h1>
-
-    <h1 class="font-dmSans-medium text-h1-desktop bg-washedPurple-500 text-center">You did it!</h1>
-
-    <h1 class="font-dmSans-regular text-h1-desktop bg-washedPurple-500 text-center">You did it!</h1>
+  <div class="appLayout">
+    <AppNavbar />
   </div>
 </template>
 
 <style scoped>
-/* No @theme here; it's in style.css */
+@reference 'tailwindcss';
+
+.appLayout {
+  @apply flex flex-col overflow-hidden;
+}
+
+h1 {
+  color: var(--color-washedBlue-600);
+  @apply bg-lime-300;
+}
 </style>

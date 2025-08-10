@@ -101,3 +101,9 @@
   --text-h5-desktop: 26px;
   --text-paragraph-desktop: 16px;
 }
+
+body {
+  background-color: var(--color-neutral-13);
+  color: var(--color-neutral-1);
+  font-family: var(--font-dmSans-regular);
+}
