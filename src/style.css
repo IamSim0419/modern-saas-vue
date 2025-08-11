@@ -107,3 +107,8 @@ body {
   color: var(--color-neutral-1);
   font-family: var(--font-dmSans-regular);
 }
+
+/* body,
+html {
+  @apply overflow-x-hidden;
+} */

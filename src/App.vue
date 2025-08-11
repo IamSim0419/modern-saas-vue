@@ -1,10 +1,12 @@
 <script lang="ts" setup>
 import AppNavbar from "@/sections/AppNavbar.vue";
+import HeroSection from "@/sections/HeroSection.vue";
 </script>
 
 <template>
-  <div class="appLayout">
+  <div class="appLayout bg-gray-200">
     <AppNavbar />
+    <HeroSection />
   </div>
 </template>
 
@@ -12,11 +14,6 @@ import AppNavbar from "@/sections/AppNavbar.vue";
 @reference 'tailwindcss';
 
 .appLayout {
-  @apply flex flex-col overflow-hidden;
-}
-
-h1 {
-  color: var(--color-washedBlue-600);
-  @apply bg-lime-300;
+  @apply overflow-hidden;
 }
 </style>
