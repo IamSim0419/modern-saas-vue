@@ -43,7 +43,7 @@ const sizeClasses = computed(() => {
     case "sm":
       return "px-3 py-1 text-sm";
     case "lg":
-      return "px-[33.8px] py-[16.9px] md:px-6 md:py-3 text-lg";
+      return "px-[33.8px] py-[16.9px] md:px-6 md:py-3 text-2xl";
     default:
       return "px-[30px] py-[8px]"; // default "md"
   }
@@ -67,9 +67,9 @@ const sizeClasses = computed(() => {
 @reference 'tailwindcss';
 
 button span {
-  @apply bg-gradient-to-r from-[#737373] to-[#D9D9D9]  z-50 bg-transparent  bg-clip-text;
-  /* background-clip: text;
-  color: transparent; */
+  @apply bg-gradient-to-r from-[#737373] to-[#D9D9D9] z-50 text-transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
 }
 
 .button-gradient {

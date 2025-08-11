@@ -11,8 +11,9 @@ import TagCom from "@/components/TagCom.vue";
       <h1>All-In-One Collaboration and Productivity Platform</h1>
       <BaseButton size="lg"> Get cypress Free </BaseButton>
     </div>
-
-    <img src="../assets/images/hero-img.png" alt="" />
+    <div class="hero-img">
+      <img src="../assets/images/app-banner.png" alt="" />
+    </div>
   </div>
 </template>
 
@@ -32,7 +33,11 @@ import TagCom from "@/components/TagCom.vue";
   font-family: var(--font-dmSans-bold);
 }
 
-.hero-container img {
-  @apply absolute left-30 w-[840.48px] h-[346.82px];
+.hero-img {
+  @apply relative  md:mt-[-90px] sm:w-full w-[750px] flex justify-center items-center mt-[-40px] sm:ml-0 ml-[-50px];
+}
+
+.hero-img img {
+  @apply bg-cover relative;
 }
 </style>

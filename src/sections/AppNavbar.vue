@@ -55,7 +55,7 @@ function handleClick() {
 @reference 'tailwindcss';
 
 header {
-  @apply bg-gray-700 w-full py-[6px] px-[25px] md:py-[10px] md:px-[45px];
+  @apply w-full py-[6px] px-[25px] md:py-[10px] md:px-[45px];
 }
 
 .navbar {

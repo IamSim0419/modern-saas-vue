@@ -4,7 +4,7 @@ import HeroSection from "@/sections/HeroSection.vue";
 </script>
 
 <template>
-  <div class="appLayout bg-gray-200">
+  <div class="appLayout">
     <AppNavbar />
     <HeroSection />
   </div>
