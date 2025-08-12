@@ -12,7 +12,7 @@
 @reference 'tailwindcss';
 
 .tag {
-  @apply relative py-[10px] px-[20px] bg-black rounded-[50px] inline-block;
+  @apply relative py-[8px] px-[16px] md:py-[10px] md:px-[20px] bg-black rounded-[50px] text-sm md:text-base inline-block;
   color: var(--color-washedPurple-400);
 }
 

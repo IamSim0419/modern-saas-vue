@@ -11,8 +11,9 @@ import TagCom from "@/components/TagCom.vue";
       <h1>All-In-One Collaboration and Productivity Platform</h1>
       <BaseButton size="lg"> Get cypress Free </BaseButton>
     </div>
-    <div class="hero-img">
-      <img src="../assets/images/app-banner.png" alt="" />
+    <div class="hero-banner">
+      <img src="../assets/images/app-banner.png" alt="App banner" />
+      <div class="banner-effect"></div>
     </div>
   </div>
 </template>
@@ -24,20 +25,20 @@ import TagCom from "@/components/TagCom.vue";
   @apply relative;
 }
 .hero-wrapper {
-  @apply flex flex-col gap-4 mt-20 py-[6px] px-[25px] md:py-[10px] md:px-[45px];
+  @apply flex flex-col gap-6 mt-20 py-[6px] px-[25px] md:py-[10px] md:px-[45px];
 }
 
 .hero-wrapper h1 {
-  @apply max-w-[244px] text-[45px] lg:text-[65px] leading-[59px];
+  @apply max-w-[244px] text-[45px] lg:text-[65px] leading-[55px] md:leading-[59px];
   color: var(--color-washedPurple-400);
   font-family: var(--font-dmSans-bold);
 }
 
-.hero-img {
+.hero-banner {
   @apply relative  md:mt-[-90px] sm:w-full w-[750px] flex justify-center items-center mt-[-40px] sm:ml-0 ml-[-50px];
 }
 
-.hero-img img {
-  @apply bg-cover relative;
+.banner-effect {
+  @apply absolute bottom-0 top-[50%] bg-gradient-to-t dark:from-black left-0 right-0 z-10;
 }
 </style>
