@@ -3,7 +3,7 @@ import TitleCom from "@/components/TitleCom.vue";
 </script>
 
 <template>
-  <section class="my-10">
+  <section>
     <div class="title-wrapper">
       <TitleCom titleClass="text-[25px] md:text-[35px] lg:text-[45px]" subtitleClass="text-[16px] ">
         <template #pill> Features </template>
@@ -25,6 +25,10 @@ import TitleCom from "@/components/TitleCom.vue";
 
 <style scoped>
 @reference 'tailwindcss';
+
+section {
+  @apply my-20;
+}
 
 .title-wrapper {
   @apply my-15 px-[25px] md:px-[45px];

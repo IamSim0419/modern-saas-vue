@@ -1,5 +1,4 @@
-<script lang="ts" setup>
-const USERS = [
+export const users = [
   {
     name: "Alice",
     message:
@@ -96,12 +95,3 @@ const USERS = [
       "Cypress is a fantastic tool that has revolutionized our workflow. Our productivity and collaboration have reached new heights.",
   },
 ];
-</script>
-
-<template>
-  <div></div>
-</template>
-
-<style scoped>
-@reference 'tailwindcss';
-</style>
