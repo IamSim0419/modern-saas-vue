@@ -48,7 +48,7 @@ const props = withDefaults(defineProps<TitleProps>(), {
 }
 
 .pill {
-  @apply rounded-full px-3 py-1 bg-black;
+  @apply rounded-full py-[8px] px-[16px] md:py-[10px] md:px-[20px]  bg-black;
   color: var(--color-washedPurple-400);
 }
 
