@@ -5,6 +5,7 @@ import PartnerSection from "@/sections/PartnersSection.vue";
 import FeaturesSection from "@/sections/FeaturesSection.vue";
 import TestimonialsSection from "@/sections/TestimonialSection.vue";
 import PricingSection from "@/sections/PricingSection.vue";
+import AppFooter from "@/sections/AppFooter.vue";
 </script>
 
 <template>
@@ -15,6 +16,7 @@ import PricingSection from "@/sections/PricingSection.vue";
     <FeaturesSection />
     <TestimonialsSection />
     <PricingSection />
+    <AppFooter />
   </div>
 </template>
 

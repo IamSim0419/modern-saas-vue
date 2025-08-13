@@ -7,6 +7,7 @@ import { pricingCards } from "@/lib/constant";
 <template>
   <section>
     <div class="pricing-container">
+      <div class="fade-circle"></div>
       <TitleCom titleClass="text-[25px] md:text-[35px] lg:text-[45px]" subtitleClass="text-[16px] ">
         <template #pill>Pricing</template>
 
@@ -17,7 +18,7 @@ import { pricingCards } from "@/lib/constant";
           plan that suits your needs and take your productivity to new heights.
         </template>
       </TitleCom>
-      <div class="pricing-wrapper">
+      <div class="pricing-cards">
         <PricingCard :plan="pricingCards[0]" />
         <PricingCard :plan="pricingCards[1]" />
       </div>
@@ -32,7 +33,7 @@ import { pricingCards } from "@/lib/constant";
   @apply px-[25px] md:px-[45px];
 }
 
-.pricing-wrapper {
+.pricing-cards {
   @apply flex flex-col justify-center gap-[20px] md:flex-row my-10;
 }
 </style>
