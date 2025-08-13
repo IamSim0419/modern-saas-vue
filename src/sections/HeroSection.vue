@@ -22,10 +22,10 @@ import TagCom from "@/components/TagCom.vue";
 @reference 'tailwindcss';
 
 .hero-container {
-  @apply relative;
+  @apply relative mt-20;
 }
 .hero-wrapper {
-  @apply flex flex-col gap-6 mt-20 py-[6px] px-[25px] md:py-[10px] md:px-[45px];
+  @apply flex flex-col gap-6  py-[6px] px-[25px] md:py-[10px] md:px-[45px];
 }
 
 .hero-wrapper h1 {

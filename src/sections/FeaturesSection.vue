@@ -26,16 +26,12 @@ import TitleCom from "@/components/TitleCom.vue";
 <style scoped>
 @reference 'tailwindcss';
 
-section {
-  @apply my-20;
-}
-
 .title-wrapper {
-  @apply my-15 px-[25px] md:px-[45px];
+  @apply px-[25px] md:px-[45px];
 }
 
 .app-calender {
-  @apply relative flex justify-center items-center;
+  @apply relative flex justify-center items-center mt-15;
 }
 
 .app-calender img {

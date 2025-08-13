@@ -40,7 +40,7 @@ const props = withDefaults(defineProps<TitleProps>(), {
 @reference 'tailwindcss';
 
 .title-container {
-  @apply flex flex-col md:max-w-[600px] lg:max-w-[650px]  mx-auto gap-8 justify-center items-start md:items-center;
+  @apply mt-20 flex flex-col md:max-w-[600px] lg:max-w-[650px]  mx-auto gap-8 justify-center items-start md:items-center;
 }
 
 .pill-wrapper {

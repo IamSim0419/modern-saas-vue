@@ -29,27 +29,21 @@ const partners = [
 const wrapperRef = ref<HTMLDivElement | null>(null);
 
 onMounted(() => {
-  gsap.fromTo(
-    wrapperRef.value,
-    {
-      x: 0,
-    },
-    {
-      x: "-100%",
-      duration: 20,
-      ease: "none",
-      repeat: -1,
-    }
-  );
+  gsap.to(wrapperRef.value, {
+    xPercent: -100,
+    duration: 20,
+    ease: "none",
+    repeat: -1,
+  });
 });
 </script>
 
 <template>
   <section class="partners">
     <div class="fade">
-      <div ref="wrapperRef" v-for="arr in 2" :key="arr" class="wrapper animate-slide">
+      <div ref="wrapperRef" v-for="arr in 3" :key="arr" class="wrapper animate-slide">
         <div v-for="partner in partners" :key="partner.alt" class="partners-logo">
-          <img :src="partner.logo" :alt="partner.alt" width="150" class="" />
+          <img :src="partner.logo" :alt="partner.alt" width="150" />
         </div>
       </div>
     </div>
@@ -60,7 +54,7 @@ onMounted(() => {
 @reference 'tailwindcss';
 
 .partners {
-  @apply relative;
+  @apply relative mt-20;
 }
 
 .fade {
