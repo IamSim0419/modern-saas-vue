@@ -1,36 +1,38 @@
 <script lang="ts" setup>
-const PRICING_CARDS = [
-  {
-    planType: "Free Plan",
-    price: "0",
-    description: "Limited block trials  for teams",
-    highlightFeature: "",
-    freatures: [
-      "Unlimited blocks for teams",
-      "Unlimited file uploads",
-      "30 day page history",
-      "Invite 2 guests",
-    ],
-  },
-  {
-    planType: "Pro Plan",
-    price: "12.99",
-    description: "Billed annually. $17 billed monthly",
-    highlightFeature: "Everything in free +",
-    freatures: [
-      "Unlimited blocks for teams",
-      "Unlimited file uploads",
-      "1 year day page history",
-      "Invite 10 guests",
-    ],
-  },
-];
+import PricingCard from "@/components/PricingCard.vue";
+import TitleCom from "@/components/TitleCom.vue";
+import { pricingCards } from "@/lib/constant";
 </script>
 
 <template>
-  <div></div>
+  <section>
+    <div class="pricing-container">
+      <TitleCom titleClass="text-[25px] md:text-[35px] lg:text-[45px]" subtitleClass="text-[16px] ">
+        <template #pill>Pricing</template>
+
+        <template #title>Choose the perfect plan for you</template>
+
+        <template #subtitle>
+          Experience all the benefits of our platform starting at just $12.99 per month. Select the
+          plan that suits your needs and take your productivity to new heights.
+        </template>
+      </TitleCom>
+      <div class="pricing-wrapper">
+        <PricingCard :plan="pricingCards[0]" />
+        <PricingCard :plan="pricingCards[1]" />
+      </div>
+    </div>
+  </section>
 </template>
 
 <style scoped>
 @reference 'tailwindcss';
+
+.pricing-container {
+  @apply px-[25px] md:px-[45px];
+}
+
+.pricing-wrapper {
+  @apply flex flex-col justify-center gap-[20px] md:flex-row my-10;
+}
 </style>

@@ -95,3 +95,34 @@ export const users = [
       "Cypress is a fantastic tool that has revolutionized our workflow. Our productivity and collaboration have reached new heights.",
   },
 ];
+
+export const pricingCards = [
+  {
+    planType: "Free Plan",
+    price: "0",
+    description: "Limited block trials  for teams",
+    ctaText: "Get Started",
+    highlightFeature: "",
+
+    features: [
+      { text: "Unlimited blocks for teams" },
+      { text: "Unlimited file uploads" },
+      { text: "30 day page history" },
+      { text: "Invite 2 guests" },
+    ],
+  },
+  {
+    planType: "Pro Plan",
+    price: "12.99",
+    description: "Billed annually. $17 billed monthly",
+    ctaText: "G0 Pro",
+    highlightFeature: "Everything in free +",
+
+    features: [
+      { text: "Unlimited blocks for teams" },
+      { text: "Unlimited file uploads" },
+      { text: "1 year day page history" },
+      { text: "Invite 10 guests" },
+    ],
+  },
+];

@@ -82,6 +82,8 @@ const handleHover = (hover: boolean) => {
     <!-- Row 2 -->
     <div ref="row2Ref" class="row">
       <article
+        @mouseenter="handleHover(true)"
+        @mouseleave="handleHover(false)"
         v-for="(user, i) in [...row2, ...row2]"
         :key="`${user.name}-row1-${i}`"
         class="row-card"

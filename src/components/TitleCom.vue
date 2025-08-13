@@ -44,7 +44,7 @@ const props = withDefaults(defineProps<TitleProps>(), {
 }
 
 .pill-wrapper {
-  @apply rounded-full p-[1px] bg-gradient-to-r from-[#2F00FF] to-[#6400C1];
+  @apply rounded-full p-[1px] bg-gradient-to-r from-[#6400C1] to-[#2F00FF];
 }
 
 .pill {

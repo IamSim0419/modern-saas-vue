@@ -9,7 +9,7 @@ import TagCom from "@/components/TagCom.vue";
       <TagCom>✨ Your work space Perfected</TagCom>
 
       <h1>All-In-One Collaboration and Productivity Platform</h1>
-      <BaseButton size="lg"> Get cypress Free </BaseButton>
+      <BaseButton button-class="px-[33.8px] py-[16.9px] text-[33px]"> Get cypress Free </BaseButton>
     </div>
     <div class="hero-banner">
       <img src="../assets/images/app-banner.png" alt="App banner" />
