@@ -30,7 +30,7 @@ import { pricingCards } from "@/lib/constant";
 @reference 'tailwindcss';
 
 .pricing-container {
-  @apply px-[25px] md:px-[45px];
+  @apply px-[25px] md:px-[45px] mt-20 md:mt-30;
 }
 
 .pricing-cards {

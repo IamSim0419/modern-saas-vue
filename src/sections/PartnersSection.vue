@@ -54,7 +54,7 @@ onMounted(() => {
 @reference 'tailwindcss';
 
 .partners {
-  @apply relative mt-20;
+  @apply relative mt-20 md:mt-30;
 }
 
 .fade {

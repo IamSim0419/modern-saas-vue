@@ -27,7 +27,7 @@ import TitleCom from "@/components/TitleCom.vue";
 @reference 'tailwindcss';
 
 .title-wrapper {
-  @apply px-[25px] md:px-[45px];
+  @apply px-[25px] md:px-[45px] mt-20 md:mt-30;
 }
 
 .app-calender {

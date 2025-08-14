@@ -1,37 +1,44 @@
 <script lang="ts" setup>
+import TitleCom from "@/components/TitleCom.vue";
+
 import BaseButton from "@/components/BaseButton.vue";
-import TagCom from "@/components/TagCom.vue";
+// import TagCom from "@/components/TagCom.vue";
 </script>
 
 <template>
-  <div class="hero-container">
+  <section class="hero-container">
     <div class="hero-wrapper">
-      <TagCom>✨ Your work space Perfected</TagCom>
+      <TitleCom
+        titleClass="text-[45px] font-dmSans-bold leading-15 md:text-[55px]  lg:text-[65px] md:max-w-[620px] lg:max-w-[800px]"
+        subtitleClass="text-[16px] md:max-w-[620px] md:mx-auto"
+      >
+        <template #pill>✨ Your work space Perfected</template>
 
-      <h1>All-In-One Collaboration and Productivity Platform</h1>
-      <BaseButton button-class="px-[33.8px] py-[16.9px] text-[33px]"> Get cypress Free </BaseButton>
+        <template #title>All-In-One Collaboration and Productivity Platform</template>
+
+        <template #subtitle>
+          Experience all the benefits of our platform starting at just $12.99 per month. Select the
+          plan that suits your needs and take your productivity to new heights.
+        </template>
+      </TitleCom>
+
+      <BaseButton
+        button-class="mt-2 py-[12px] text-[33px] w-full md:w-fit md:px-[20px] md:py-[10px] md:text-[22px]"
+      >
+        Get cypress Free
+      </BaseButton>
     </div>
-    <div class="hero-banner">
-      <img src="../assets/images/app-banner.png" alt="App banner" />
-      <div class="banner-effect"></div>
-    </div>
-  </div>
+  </section>
 </template>
 
 <style scoped>
 @reference 'tailwindcss';
 
 .hero-container {
-  @apply relative mt-20;
+  @apply relative mt-20 md:mt-30;
 }
 .hero-wrapper {
-  @apply flex flex-col gap-6  py-[6px] px-[25px] md:py-[10px] md:px-[45px];
-}
-
-.hero-wrapper h1 {
-  @apply max-w-[244px] text-[45px] lg:text-[65px] leading-[55px] md:leading-[59px];
-  color: var(--color-washedPurple-400);
-  font-family: var(--font-dmSans-bold);
+  @apply flex flex-col items-center gap-6 px-[25px] md:px-[45px];
 }
 
 .hero-banner {

@@ -6,7 +6,7 @@ import { users } from "@/lib/constant";
 
 <template>
   <section>
-    <div class="testimonial-wrapper">
+    <div class="testimonial-container">
       <TitleCom titleClass="text-[25px] md:text-[35px] lg:text-[45px]" subtitleClass="text-[16px] ">
         <template #pill>Testimonials</template>
 
@@ -26,7 +26,7 @@ import { users } from "@/lib/constant";
 <style scoped>
 @reference 'tailwindcss';
 
-.testimonial-wrapper {
-  @apply px-[25px] md:px-[45px];
+.testimonial-container {
+  @apply px-[25px] md:px-[45px] mt-20 md:mt-30;
 }
 </style>
