@@ -2,11 +2,46 @@
 import PricingCard from "@/components/PricingCard.vue";
 import TitleCom from "@/components/TitleCom.vue";
 import { pricingCards } from "@/lib/constant";
+
+import { ref, onMounted } from "vue";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+gsap.registerPlugin(ScrollTrigger);
+
+const titleWrapperRef = ref<HTMLElement | null>(null);
+
+onMounted(() => {
+  if (!titleWrapperRef.value) return;
+
+  // Set initial visible state
+  gsap.set(titleWrapperRef.value.querySelectorAll(".title, .subtitle"), {
+    opacity: 1,
+    y: 0,
+  });
+
+  // Animation setup
+  const tl = gsap.timeline({
+    scrollTrigger: {
+      trigger: titleWrapperRef.value,
+      start: "top 75%",
+      toggleActions: "play none none none",
+    },
+  });
+
+  tl.from(titleWrapperRef.value.querySelectorAll(".title, .subtitle"), {
+    y: 30,
+    opacity: 0,
+    duration: 0.8,
+    stagger: 0.5,
+    ease: "power2.out",
+  });
+});
 </script>
 
 <template>
   <section>
-    <div class="pricing-container">
+    <div ref="titleWrapperRef" class="pricing-container">
       <div class="fade-circle"></div>
       <TitleCom
         titleClass="text-[25px] md:text-[35px] lg:text-[45px] md:max-w-[350px] lg:max-w-[450px] md:mx-auto font-dmSans-bold"
