@@ -55,7 +55,7 @@ const variantClasses = computed(() => {
 @reference 'tailwindcss';
 
 button span {
-  @apply bg-gradient-to-r from-[#737373] to-[#D9D9D9] z-50 text-transparent;
+  @apply bg-gradient-to-r from-[#737373] to-[#D9D9D9] z-10 text-transparent;
   background-clip: text;
   -webkit-background-clip: text;
 }

@@ -1,28 +1,7 @@
 <script lang="ts" setup>
 import BaseButton from "@/components/BaseButton.vue";
-
-const navLinks = [
-  {
-    name: "Product",
-    href: "/",
-  },
-  {
-    name: "Pricing",
-    href: "/",
-  },
-  {
-    name: "About",
-    href: "/",
-  },
-  {
-    name: "Resources",
-    href: "/",
-  },
-  {
-    name: "Download",
-    href: "/",
-  },
-];
+import MobileNav from "@/components/MobileNav.vue";
+import { navLinks } from "@/lib/constant";
 
 function handleClick() {
   alert("Sign Up clicked!");
@@ -44,8 +23,13 @@ function handleClick() {
           </li>
         </ul>
       </nav>
-      <div>
+      <div class="desktop_btn">
+        <button class="login_btn">Login</button>
         <BaseButton @click="handleClick">Sign Up</BaseButton>
+      </div>
+
+      <div class="mobile_icon">
+        <MobileNav :nav-links="navLinks" />
       </div>
     </div>
   </header>
@@ -77,5 +61,17 @@ nav ul {
 
 nav ul > li {
   @apply p-[10px] text-[16px];
+}
+
+.desktop_btn {
+  @apply hidden md:block;
+}
+
+.desktop_btn .login_btn {
+  @apply bg-neutral-900 py-2 px-6 mr-2 rounded-md cursor-pointer hover:bg-neutral-800;
+}
+
+.mobile_icon {
+  @apply md:hidden;
 }
 </style>

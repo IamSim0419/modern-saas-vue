@@ -1,3 +1,27 @@
+// Navigation
+export const navLinks = [
+  {
+    name: "Product",
+    href: "/",
+  },
+  {
+    name: "Pricing",
+    href: "/",
+  },
+  {
+    name: "About",
+    href: "/",
+  },
+  {
+    name: "Resources",
+    href: "/",
+  },
+  {
+    name: "Download",
+    href: "/",
+  },
+];
+
 export const users = [
   {
     name: "Alice",
@@ -98,8 +122,8 @@ export const users = [
 
 export const pricingCards = [
   {
-    planType: "Free Plan",
-    price: "0",
+    planType: "Free",
+    price: 0,
     description: "Limited block trials  for teams",
     ctaText: "Get Started",
     highlightFeature: "",
