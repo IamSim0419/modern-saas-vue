@@ -5,7 +5,7 @@ type ButtonVariant = "primary" | "secondary";
 
 interface ButtonProps {
   variant?: ButtonVariant;
-  buttonClass?: string; // Custom classes from parent
+  buttonClass?: string;
   disabled?: boolean;
 }
 
@@ -26,12 +26,12 @@ const variantClasses = computed(() => {
   switch (props.variant) {
     case "primary":
       return props.disabled
-        ? "bg-primary/50 text-white cursor-not-allowed"
-        : "button-gradient cursor-pointer";
+        ? "bg-gray-500/50 text-white cursor-not-allowed"
+        : "button-primary cursor-pointer";
     case "secondary":
       return props.disabled
         ? "bg-gray-500/50 text-gray-200 cursor-not-allowed"
-        : "bg-green-700 text-white hover:bg-gray-600 active:bg-gray-500 cursor-pointer";
+        : "button-secondary cursor-pointer";
     default:
       return "";
   }
@@ -60,8 +60,12 @@ button span {
   -webkit-background-clip: text;
 }
 
-.button-gradient {
+.button-primary {
   @apply relative bg-gradient-to-r from-[#474A57] to-[#707070] hover:bg-gradient-to-r hover:from-[#5F5F63] hover:to-[#D9D9D9];
+}
+
+.button-secondary {
+  @apply relative bg-gradient-to-r from-[#2639B5] to-[#5F46CD] hover:bg-gradient-to-r hover:from-[#273bba] hover:to-[#9383db];
 }
 
 button .bg-overlay {

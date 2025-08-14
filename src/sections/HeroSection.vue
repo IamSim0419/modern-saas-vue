@@ -30,6 +30,7 @@ import BaseButton from "@/components/BaseButton.vue";
 
       <BaseButton
         button-class="mt-2 py-[12px] text-[33px] w-full md:w-fit md:px-[20px] md:py-[10px] md:text-[22px]"
+        variant="secondary"
       >
         Get cypress Free
       </BaseButton>
