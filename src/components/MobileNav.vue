@@ -63,19 +63,22 @@ watch(
 <template>
   <div>
     <!-- Hamburger -->
-    <button @click="toggleNav" class="relative z-50 p-3 focus:outline-none cursor-pointer">
+    <button
+      @click="toggleNav"
+      class="relative z-50 p-3 focus:outline-none cursor-pointer bg-washedBlue-700"
+    >
       <span
         :class="[
-          'block w-6 h-0.5 bg-white transition-all',
+          'block w-6 h-0.5 bg-neutral-100 transition-all',
           isOpen ? 'rotate-45 translate-y-1.5' : '',
         ]"
       ></span>
       <span
-        :class="['block w-6 h-0.5 bg-white my-1 transition-all', isOpen ? 'opacity-0' : '']"
+        :class="['block w-6 h-0.5 bg-neutral-100 my-1 transition-all', isOpen ? 'opacity-0' : '']"
       ></span>
       <span
         :class="[
-          'block w-6 h-0.5 bg-white transition-all',
+          'block w-6 h-0.5 bg-neutral-100 transition-all',
           isOpen ? '-rotate-45 -translate-y-1.5' : '',
         ]"
       ></span>
