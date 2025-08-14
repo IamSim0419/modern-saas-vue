@@ -124,5 +124,6 @@ import { footerLinks } from "@/lib/constant";
 
 .copyright {
   @apply mt-12 pt-8 border-t border-gray-800 text-sm text-center;
+  color: var(--color-neutral-7);
 }
 </style>

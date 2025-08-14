@@ -24,6 +24,7 @@ import { pricingCards } from "@/lib/constant";
       <div class="pricing-cards">
         <PricingCard :plan="pricingCards[0]" />
         <PricingCard :plan="pricingCards[1]" />
+        <div class="fade"></div>
       </div>
     </div>
   </section>
@@ -37,6 +38,13 @@ import { pricingCards } from "@/lib/constant";
 }
 
 .pricing-cards {
-  @apply flex flex-col justify-center gap-[20px] md:flex-row my-10;
+  @apply relative flex flex-col justify-center gap-[20px] md:flex-row my-10;
+}
+
+.fade {
+  @apply absolute ml-15 -top-35 md:ml-0 w-[420px] h-[400.89px] md:w-[604px] md:h-[556.89px] md:-top-65 bg-[#5000B5] rounded-full opacity-40 -z-10;
+  /* background-color: var(--color-primaryPurple-700); */
+  -webkit-filter: blur(80px);
+  filter: blur(80px);
 }
 </style>
