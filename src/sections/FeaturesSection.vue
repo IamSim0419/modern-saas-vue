@@ -7,7 +7,7 @@ import TitleCom from "@/components/TitleCom.vue";
     <div class="title-wrapper">
       <TitleCom
         titleClass="text-[25px] md:text-[35px] lg:text-[45px] md:max-w-[460px] lg:max-w-[550px] md:mx-auto font-dmSans-bold"
-        subtitleClass="text-[16px] "
+        subtitleClass="text-[16px] md:max-w-[460px] mx-auto"
       >
         <template #pill> Features </template>
 

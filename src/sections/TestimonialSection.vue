@@ -9,7 +9,7 @@ import { users } from "@/lib/constant";
     <div class="testimonial-container">
       <TitleCom
         titleClass="text-[25px] md:text-[35px] lg:text-[45px] md:max-w-[330px] lg:max-w-[400px] md:mx-auto font-dmSans-bold"
-        subtitleClass="text-[16px] "
+        subtitleClass="text-[16px] md:max-w-[440px] mx-auto"
       >
         <template #pill>Testimonials</template>
 

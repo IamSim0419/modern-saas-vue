@@ -10,7 +10,7 @@ import { pricingCards } from "@/lib/constant";
       <div class="fade-circle"></div>
       <TitleCom
         titleClass="text-[25px] md:text-[35px] lg:text-[45px] md:max-w-[350px] lg:max-w-[450px] md:mx-auto font-dmSans-bold"
-        subtitleClass="text-[16px] "
+        subtitleClass="text-[16px] md:max-w-[450px] mx-auto"
       >
         <template #pill>Pricing</template>
 
