@@ -103,7 +103,7 @@
 }
 
 body {
-  background-color: var(--color-neutral-13);
+  background-color: black;
   color: var(--color-neutral-1);
   font-family: var(--font-dmSans-regular);
 }
