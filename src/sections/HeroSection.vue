@@ -14,11 +14,17 @@ import BaseButton from "@/components/BaseButton.vue";
       >
         <template #pill>✨ Your work space Perfected</template>
 
-        <template #title>All-In-One Collaboration and Productivity Platform</template>
+        <template #title>
+          <h1 v-gsap="{ preset: 'slide-up', delay: 0.5 }">
+            All-In-One Collaboration and Productivity Platform
+          </h1></template
+        >
 
         <template #subtitle>
-          Experience all the benefits of our platform starting at just $12.99 per month. Select the
-          plan that suits your needs and take your productivity to new heights.
+          <p v-gsap="{ preset: 'slide-up', delay: 0.8 }">
+            Experience all the benefits of our platform starting at just $12.99 per month. Select
+            the plan that suits your needs and take your productivity to new heights.
+          </p>
         </template>
       </TitleCom>
 
