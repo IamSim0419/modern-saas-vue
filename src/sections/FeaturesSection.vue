@@ -42,9 +42,9 @@ import TitleCom from "@/components/TitleCom.vue";
 }
 
 .app-calender .fade {
-  @apply absolute ml-15 -top-35 md:ml-0 w-[420px] h-[400.89px] md:w-[604px] md:h-[556.89px] md:-top-45  rounded-full -z-10;
-  background-color: var(--color-primaryPurple-700);
-  opacity: 0.5;
-  filter: blur(181.2px);
+  @apply absolute ml-15 -top-35 md:ml-0 w-[420px] h-[400.89px] md:w-[604px] md:h-[556.89px] md:-top-45 bg-[#5000B5] rounded-full opacity-40 -z-10;
+  /* background-color: var(--color-primaryPurple-700); */
+  -webkit-filter: blur(80px);
+  filter: blur(80px);
 }
 </style>
