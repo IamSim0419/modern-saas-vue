@@ -28,6 +28,10 @@ import BaseButton from "@/components/BaseButton.vue";
         Get cypress Free
       </BaseButton>
     </div>
+    <div class="hero-banner">
+      <img src="../assets/images/app-banner.png" alt="" />
+      <div class="banner-effect"></div>
+    </div>
   </section>
 </template>
 

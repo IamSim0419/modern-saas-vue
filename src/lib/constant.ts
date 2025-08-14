@@ -115,7 +115,7 @@ export const pricingCards = [
     planType: "Pro Plan",
     price: "12.99",
     description: "Billed annually. $17 billed monthly",
-    ctaText: "G0 Pro",
+    ctaText: "Go Pro",
     highlightFeature: "Everything in free +",
 
     features: [
