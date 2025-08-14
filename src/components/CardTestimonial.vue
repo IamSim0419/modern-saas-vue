@@ -115,11 +115,11 @@ section {
 }
 
 .row-card {
-  @apply bg-gradient-to-r from-[#201E2C] to-[#6D6A7B] p-[1px] rounded-[15px] shadow-md flex-shrink-0 w-[444px] will-change-transform hover:scale-[1.02] transition-transform duration-300;
+  @apply bg-gradient-to-r from-[#282638] to-[#3e3d48] p-[1px] rounded-[15px] shadow-md flex-shrink-0 w-[444px] will-change-transform hover:scale-[1.02] transition-transform duration-300;
 }
 
 .card-content {
-  @apply bg-gradient-to-r from-[#0F0C1D] to-[#1F1A36] rounded-[inherit] p-[25px] w-full h-full;
+  @apply bg-gradient-to-r from-[#120e23] to-[#1b1731] rounded-[inherit] p-[25px] w-full h-full;
 }
 
 .card-content .user {
