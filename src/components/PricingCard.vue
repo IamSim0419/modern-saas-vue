@@ -78,8 +78,9 @@ defineProps<{
 }
 
 .card_plan {
-  @apply text-[35px] font-bold;
+  @apply text-[35px];
   color: var(--color-neutral-4);
+  font-family: var(--font-dmSans-bold);
 }
 
 .card_price {
