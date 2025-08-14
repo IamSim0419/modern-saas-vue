@@ -70,7 +70,7 @@ defineProps<{
 @reference 'tailwindcss';
 
 .card_wrapper {
-  @apply relative border border-[#2C3A6B] bg-black/40 rounded-[10px] overflow-hidden shadow-sm hover:shadow-md transition-shadow h-full flex flex-col gap-6 px-[30px] py-[20px];
+  @apply relative border border-[#2C3A6B] bg-black/40 rounded-[10px] overflow-hidden shadow-sm hover:shadow-md transition-shadow h-full flex flex-col gap-6 px-[30px] py-[32px];
 }
 
 .diamond-icon {

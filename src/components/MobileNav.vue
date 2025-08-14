@@ -1,6 +1,7 @@
 <script lang="ts" setup>
 import { ref, watch, onMounted } from "vue";
 import gsap from "gsap";
+import BaseButton from "./BaseButton.vue";
 
 defineProps<{
   navLinks: {
@@ -15,9 +16,9 @@ function toggleNav() {
   isOpen.value = !isOpen.value;
 }
 
-// function closeNav() {
-//   isOpen.value = false;
-// }
+function handleClick() {
+  alert("Sign Up clicked!");
+}
 
 const menuRef = ref<HTMLElement | null>(null);
 const linksRef = ref<HTMLAnchorElement[]>([]);
@@ -65,7 +66,7 @@ watch(
     <!-- Hamburger -->
     <button
       @click="toggleNav"
-      class="relative z-50 p-3 focus:outline-none cursor-pointer bg-washedBlue-700"
+      class="relative z-50 p-3 focus:outline-none cursor-pointer bg-primaryPurple-700"
     >
       <span
         :class="[
@@ -98,12 +99,22 @@ watch(
       >
         {{ link.name }}
       </a>
-
-      <!-- <span @click="closeNav">X</span> -->
+      <div class="mobile_btn">
+        <button class="login_btn">Login</button>
+        <BaseButton @click="handleClick">Sign Up</BaseButton>
+      </div>
     </nav>
   </div>
 </template>
 
 <style scoped>
 @reference 'tailwindcss';
+
+.mobile_btn {
+  @apply flex flex-col;
+}
+
+.mobile_btn .login_btn {
+  @apply bg-neutral-900 py-2 px-6 rounded-md cursor-pointer hover:bg-neutral-800 mb-2;
+}
 </style>
