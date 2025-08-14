@@ -11,6 +11,8 @@ defineProps<{
 }>();
 
 const isOpen = ref(false);
+const menuRef = ref<HTMLElement | null>(null);
+const linksRef = ref<HTMLAnchorElement[]>([]);
 
 function toggleNav() {
   isOpen.value = !isOpen.value;
@@ -19,9 +21,6 @@ function toggleNav() {
 function handleClick() {
   alert("Sign Up clicked!");
 }
-
-const menuRef = ref<HTMLElement | null>(null);
-const linksRef = ref<HTMLAnchorElement[]>([]);
 
 onMounted(() => {
   if (menuRef.value) {
@@ -62,40 +61,24 @@ watch(
 </script>
 
 <template>
-  <div>
+  <div class="nav-container">
     <!-- Hamburger -->
-    <button
-      @click="toggleNav"
-      class="relative z-50 p-3 focus:outline-none cursor-pointer bg-primaryPurple-700"
-    >
-      <span
-        :class="[
-          'block w-6 h-0.5 bg-neutral-100 transition-all',
-          isOpen ? 'rotate-45 translate-y-1.5' : '',
-        ]"
-      ></span>
-      <span
-        :class="['block w-6 h-0.5 bg-neutral-100 my-1 transition-all', isOpen ? 'opacity-0' : '']"
-      ></span>
-      <span
-        :class="[
-          'block w-6 h-0.5 bg-neutral-100 transition-all',
-          isOpen ? '-rotate-45 -translate-y-1.5' : '',
-        ]"
-      ></span>
+    <button @click="toggleNav" class="hamburger-button">
+      <span :class="['hamburger-line', { 'open-first': isOpen }]"></span>
+      <span :class="['hamburger-line', 'middle-line', { 'open-middle': isOpen }]"></span>
+      <span :class="['hamburger-line', { 'open-last': isOpen }]"></span>
     </button>
+  </div>
 
-    <!-- Menu -->
-    <nav
-      ref="menuRef"
-      class="fixed top-0 right-0 w-64 h-full bg-black shadow-lg z-40 p-8 flex flex-col space-y-6 lg:hidden mt-20"
-    >
+  <!-- Menu -->
+  <nav ref="menuRef" class="mobile-menu">
+    <div class="menu-content">
       <a
         v-for="(link, i) in navLinks"
         :key="i"
         href="#"
         ref="el => linksRef[i] = el!"
-        class="text-lg font-semibold hover:text-primaryPurple-600"
+        class="menu-link"
       >
         {{ link.name }}
       </a>
@@ -103,18 +86,67 @@ watch(
         <button class="login_btn">Login</button>
         <BaseButton @click="handleClick">Sign Up</BaseButton>
       </div>
-    </nav>
-  </div>
+    </div>
+  </nav>
 </template>
 
 <style scoped>
 @reference 'tailwindcss';
 
+/* Container */
+.nav-container {
+  @apply relative;
+}
+
+/* Hamburger Button */
+.hamburger-button {
+  @apply relative z-50 p-3 focus:outline-none cursor-pointer;
+  color: var(--color-primaryPurple-700);
+}
+
+.hamburger-line {
+  @apply block w-6 h-0.5 bg-neutral-100 transition-all;
+}
+
+.middle-line {
+  @apply my-1;
+}
+
+.open-first {
+  @apply rotate-45 translate-y-1.5;
+}
+
+.open-middle {
+  @apply opacity-0;
+}
+
+.open-last {
+  @apply -rotate-45 -translate-y-1.5;
+}
+
+/* Mobile Menu */
+.mobile-menu {
+  @apply fixed top-0 right-0 w-64 h-full bg-black shadow-lg z-40 lg:hidden;
+}
+
+.menu-content {
+  @apply p-8 flex flex-col space-y-6 mt-20;
+}
+
+.menu-link {
+  @apply text-lg font-semibold;
+}
+
+.menu-link:hover {
+  color: var(--color-primaryPurple-600);
+}
+
+/* Buttons */
 .mobile_btn {
   @apply flex flex-col;
 }
 
-.mobile_btn .login_btn {
+.login_btn {
   @apply bg-neutral-900 py-2 px-6 rounded-md cursor-pointer hover:bg-neutral-800 mb-2;
 }
 </style>
