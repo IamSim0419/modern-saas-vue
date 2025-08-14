@@ -7,7 +7,10 @@ import { users } from "@/lib/constant";
 <template>
   <section>
     <div class="testimonial-container">
-      <TitleCom titleClass="text-[25px] md:text-[35px] lg:text-[45px]" subtitleClass="text-[16px] ">
+      <TitleCom
+        titleClass="text-[25px] md:text-[35px] lg:text-[45px] md:max-w-[350px] md:mx-auto"
+        subtitleClass="text-[16px] "
+      >
         <template #pill>Testimonials</template>
 
         <template #title> The perfect plan for you</template>

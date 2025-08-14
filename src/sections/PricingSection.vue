@@ -8,7 +8,10 @@ import { pricingCards } from "@/lib/constant";
   <section>
     <div class="pricing-container">
       <div class="fade-circle"></div>
-      <TitleCom titleClass="text-[25px] md:text-[35px] lg:text-[45px]" subtitleClass="text-[16px] ">
+      <TitleCom
+        titleClass="text-[25px] md:text-[35px] lg:text-[45px] md:max-w-[350px] lg:max-w-[450px] md:mx-auto"
+        subtitleClass="text-[16px] "
+      >
         <template #pill>Pricing</template>
 
         <template #title>Choose the perfect plan for you</template>
