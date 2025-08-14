@@ -46,7 +46,7 @@ import BaseButton from "@/components/BaseButton.vue";
 }
 
 .hero-banner {
-  @apply relative  md:mt-[-90px] sm:w-full w-[750px] flex justify-center items-center mt-[-40px] sm:ml-0 ml-[-50px];
+  @apply relative  md:mt-[-40px] lg:mt-[-140px] sm:w-full w-[750px] flex justify-center items-center mt-[-40px] sm:ml-0 ml-[-50px] border;
 }
 
 .banner-effect {
