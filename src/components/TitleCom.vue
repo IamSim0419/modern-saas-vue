@@ -21,7 +21,7 @@ const props = withDefaults(defineProps<TitleProps>(), {
 
     <!-- Title & Subheading -->
     <div v-if="$slots.subtitle" class="title-wrapper">
-      <h2 :class="['title', props.titleClass]">
+      <h2 :class="['title ', props.titleClass]">
         <slot name="title">Default Title</slot>
       </h2>
       <p :class="['subtitle', props.subtitleClass]">
@@ -57,7 +57,7 @@ const props = withDefaults(defineProps<TitleProps>(), {
 }
 
 .title {
-  @apply text-left font-bold md:text-center;
+  @apply text-left md:text-center;
   color: var(--color-washedPurple-400);
 }
 

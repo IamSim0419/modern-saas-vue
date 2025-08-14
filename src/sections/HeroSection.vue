@@ -9,7 +9,7 @@ import BaseButton from "@/components/BaseButton.vue";
   <section class="hero-container">
     <div class="hero-wrapper">
       <TitleCom
-        titleClass="text-[45px] font-dmSans-bold leading-15 md:text-[55px]  lg:text-[65px] md:max-w-[620px] lg:max-w-[800px]"
+        titleClass="text-[45px] font-dmSans-bold leading-13 md:leading-15 md:text-[55px]  lg:text-[65px] md:max-w-[620px] lg:max-w-[800px]"
         subtitleClass="text-[16px] md:max-w-[620px] md:mx-auto"
       >
         <template #pill>✨ Your work space Perfected</template>
