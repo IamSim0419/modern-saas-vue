@@ -9,14 +9,16 @@ import AppFooter from "@/sections/AppFooter.vue";
 </script>
 
 <template>
-  <div class="appLayout">
-    <AppNavbar />
-    <HeroSection />
-    <PartnerSection />
-    <FeaturesSection />
-    <TestimonialsSection />
-    <PricingSection />
-    <AppFooter />
+  <div id="smooth-wrapper">
+    <div id="smooth-content">
+      <AppNavbar />
+      <HeroSection />
+      <PartnerSection />
+      <FeaturesSection />
+      <TestimonialsSection />
+      <PricingSection />
+      <AppFooter />
+    </div>
   </div>
 </template>
 
