@@ -9,7 +9,7 @@ import AppFooter from "@/sections/AppFooter.vue";
 </script>
 
 <template>
-  <div id="smooth-wrapper">
+  <div id="smooth-wrapper" class="overflew-hidden">
     <div id="smooth-content">
       <AppNavbar />
       <HeroSection />
@@ -24,8 +24,4 @@ import AppFooter from "@/sections/AppFooter.vue";
 
 <style scoped>
 @reference 'tailwindcss';
-
-.appLayout {
-  @apply overflow-hidden;
-}
 </style>
