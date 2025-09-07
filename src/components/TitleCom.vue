@@ -62,7 +62,7 @@ const props = withDefaults(defineProps<TitleProps>(), {
 }
 
 .subtitle {
-  @apply md:text-center;
+  @apply md:text-center mt-4;
   color: var(--color-washedPurple-700);
 }
 </style>

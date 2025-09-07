@@ -29,7 +29,7 @@ import BaseButton from "@/components/BaseButton.vue";
       </TitleCom>
 
       <BaseButton
-        button-class="mt-2 py-[12px] text-[33px] w-full md:w-fit md:px-[20px] md:py-[10px] md:text-[22px]"
+        button-class="mt-4 py-[12px] text-[33px] w-full md:w-fit md:px-[20px] md:py-[10px] md:text-[22px]"
         variant="secondary"
       >
         Get cypress Free
@@ -53,7 +53,7 @@ import BaseButton from "@/components/BaseButton.vue";
 }
 
 .hero-banner {
-  @apply relative  md:mt-[-40px] lg:mt-[-140px] sm:w-full w-[750px] flex justify-center items-center mt-[-40px] sm:ml-0 ml-[-50px];
+  @apply relative overflow-hidden  md:mt-[-40px] lg:mt-[-140px] sm:w-full w-[750px] flex justify-center items-center mt-[-40px] sm:ml-0 ml-[-50px];
 }
 
 .banner-effect {
