@@ -108,7 +108,7 @@ body {
   font-family: var(--font-dmSans-regular);
 }
 
-/* body,
+body,
 html {
   @apply overflow-x-hidden;
-} */
+}

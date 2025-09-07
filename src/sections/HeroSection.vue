@@ -46,7 +46,7 @@ import BaseButton from "@/components/BaseButton.vue";
 @reference 'tailwindcss';
 
 .hero-container {
-  @apply relative mt-20 md:mt-24 overflow-hidden;
+  @apply relative mt-20 md:mt-24;
 }
 .hero-wrapper {
   @apply flex flex-col items-center gap-6 px-[25px] md:px-[45px];

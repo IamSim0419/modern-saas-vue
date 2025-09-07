@@ -9,7 +9,7 @@ import AppFooter from "@/sections/AppFooter.vue";
 </script>
 
 <template>
-  <div id="smooth-wrapper" class="overflow-x-hidden w-full">
+  <div id="smooth-wrapper">
     <div id="smooth-content">
       <AppNavbar />
       <HeroSection />
