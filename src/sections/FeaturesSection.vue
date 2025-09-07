@@ -80,6 +80,4 @@ onMounted(() => {
   -webkit-filter: blur(80px);
   filter: blur(80px);
 }
-
-/* Remove initial hidden state - we'll handle this in GSAP */
 </style>

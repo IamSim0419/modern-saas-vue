@@ -46,14 +46,14 @@ import BaseButton from "@/components/BaseButton.vue";
 @reference 'tailwindcss';
 
 .hero-container {
-  @apply relative mt-20 md:mt-24;
+  @apply relative mt-20 md:mt-24 overflow-hidden;
 }
 .hero-wrapper {
   @apply flex flex-col items-center gap-6 px-[25px] md:px-[45px];
 }
 
 .hero-banner {
-  @apply relative overflow-hidden  md:mt-[-40px] lg:mt-[-140px] sm:w-full w-[750px] flex justify-center items-center mt-[-40px] sm:ml-0 ml-[-50px];
+  @apply relative  md:mt-[-40px] lg:mt-[-140px] sm:w-full w-[750px] flex justify-center items-center mt-[-40px] sm:ml-0 ml-[-50px];
 }
 
 .banner-effect {
